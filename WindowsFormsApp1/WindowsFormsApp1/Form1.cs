@@ -201,6 +201,7 @@ namespace WindowsFormsApp1
                     {
                         PacmanR.Left = 0;
                         PacmanR.Top = 25;
+                        label3.Visible = true;
                         label3.Text = "GAME OVER";
                         String nombre = textBox1.Text;
                         Usuario jugador = new Usuario(nombre, puntos);
