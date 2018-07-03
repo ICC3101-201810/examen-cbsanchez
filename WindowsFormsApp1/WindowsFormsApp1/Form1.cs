@@ -42,6 +42,16 @@ namespace WindowsFormsApp1
             else
             {
                 todo = new Main();
+                Usuario u1 = new Usuario("carlos", 20);
+                Usuario u2 = new Usuario("carla", 45);
+                Usuario u3 = new Usuario("diego", 47);
+                Usuario u4 = new Usuario("juan", 68);
+                todo.agregarUsuario(u1);
+                todo.agregarUsuario(u2);
+                todo.agregarUsuario(u3);
+                todo.agregarUsuario(u4);
+
+
             }
                 
             
@@ -72,7 +82,7 @@ namespace WindowsFormsApp1
             panel3.BringToFront();
             foreach(Usuario u in todo.Listaordenada())
             {
-                listBox1.Items.Add("nombre: " + u.getnombre() + "puntos: " + u.getpuntos());
+                listBox1.Items.Add("Nombre: " + u.getnombre() + "       Puntos: " + u.getpuntos());
             }
         }
 
